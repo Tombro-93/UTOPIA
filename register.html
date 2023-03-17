@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="A registration page with a series of short questions to provide access to membership"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css"></link>
+    <link rel="stylesheet" href="./register.css"></link>
+    <script src="./store.js" defer></script>
+    <script src="./form.js" async></script>
+    <title>UTOPIA | Register</title>
+  </head>
+  <body>
+    <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="./assets/logo white-01.png" alt="UTOPIA website lotus logo"/></a>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./holding.html">Meditation</a></li>
+          <li><a href="./holding.html">Mindfulness</a></li>
+          <li><a href="./holding.html">Blog</a></li>
+          <li><a href="./form.html">Log in</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    <main> 
+      <container class="box-one">
+        <form class="form" action="#" method="POST">
+          <h2>Join the team!</h2>
+            <section class="full-name">
+              <label for="name"><img src="./assets/profile-01.png" alt="human profile icon"/></label>
+              <input type="text" name="name" id="name" placeholder="Full name..."/>
+            </section>
+        
+            <section class="phone">
+              <label for="phone"><img src="./assets/phone-01.png" alt="phone icon"/></label>
+              <input
+              placeholder="Phone..."
+                type="text"
+                name="phone"
+                id="phone"
+                required
+                pattern="[0-9]{11,14}"
+              />
+            </section>
+          
+            <section class="email">
+              <label for="email"><img src="./assets/mail-01.png" alt="email envelope icon"/></label>
+              <input
+              placeholder="Email..."
+                type="email"
+                name="email"
+                id="email"
+                placeholder="please enter your email here"
+                required
+              />
+            </section>
+         
+            <section class="password">
+              <label for="password"><img src="./assets/padlock-01.png" alt="padlock icon"/></label>
+              <input type="password" name="password" required minlength="8" placeholder="Password (8+ characters)..."/>
+            </section>
+           
+            <section class="preference">
+              <label for="preference">What are your contact preferences?</label>
+              <select name="preference" id="preference">
+                <option value="text">Text</option>
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+              </select>
+            </section>
+
+            <h2>Tell us more about you!</h2>
+            
+            <section class="services">
+              <span>What services are you interested in?</span>
+              <div class="service-one">
+              <input type="checkbox" name="service" id="online" value="online" />
+              <label for="online">Online tutorials</label>  
+            </div> 
+            <div class="service-two">   
+              <input
+                type="checkbox"
+                name="service"
+                id="meditation"
+                value="meditation"
+              />
+              <label for="meditation">Meditation guidance</label> 
+              </div>
+              <div class="service-two">
+              <input
+                type="checkbox"
+                name="service"
+                id="mental-health"
+                value="mental-health"
+              />
+              <label for="mental-health">Mental health support</label>  
+              </div>
+            </section>
+            
+            <section class="meditate">
+              <label for="amount"
+                >How many many times a week do you practice mindfulness?</label
+              >
+              <input type="number" name="amount" id="amount" min="0" max="20" />
+            </section>
+           
+            <section class="consent">
+              <span>Would you like to hear more from us?</span>
+              <div class="yes">
+              <input type="radio" name="consent" id="yes" value="yes" />
+              <label for="yes">Yes</label>
+              </div>
+              <div class="no">
+              <input type="radio" name="consent" id="no" value="yes" />
+              <label for="no">No</label>
+              </div>
+            </section>
+            <section class="experience">
+              <label for="experience">How experienced at mindfulness are you? </label>
+              <div class="slider">
+              <span>Not very</span>
+              <input
+                type="range"
+                name="experience"
+                id="experience"
+                value="3"
+                min="1"
+                max="5"
+              />
+              <span>I'm a pro!</span>
+              </div>
+            </section>
+            <section class="extra-info">
+              <label for="extra">Anything else you want to add?</label>
+              <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+            </section>
+            <section class="submission">
+              <input type="submit" onclick="clickAlert()" value="Submit"/>
+            </section>
+          </form>
+        </container>
+    </main>
+<footer>
+  <nav class="bottom-nav">
+    <div class="col-one">
+    <h2>About Us</h2>
+    <ul>
+      <li><a href="./holding.html">About UTOPIA</a></li>
+      <li><a href="./holding.html">Careers</a></li>
+      <li><a href="./holding.html">Contact Us</a></li>
+      <li><a href="./holding.html">Press</a></li>
+      <li><a href="./holding.html">Feedback</a></li>
+    </ul>
+  </div>
+    <div class="col-two">
+      <h2>Get the app</h2>
+      <a href="./holding.html"><img src="./assets/app-01.png" alt="mobile app icon"/></a>
+    </div>
+    <div class="col-three">
+      <a href="./index.html"><img src="./assets/slogan-logo-01.png" alt="lotus flower logo"/></a>
+    </div>
+  </nav>
+  <div class="footer-bottom">
+    <p>Copyright UTOPIA.2021</p>
+    <ul class="social-icons">
+      <li><img src="./assets/insta-01.png" alt="instagram social icon"/></li>
+      <li><img src="./assets/facebook-01.png" alt="facebook social icon"/></li>
+      <li><img src="./assets/twitter-01.png" alt="twitter social icon"/></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

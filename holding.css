@@ -1,0 +1,21 @@
+main {
+  background-image: url(./assets/back-blue-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 17rem 3rem;
+  font-size: 2rem;
+  color: #525252;
+  line-height: 3rem;
+}
+
+.bottom-nav {
+  margin-top: 0;
+}
